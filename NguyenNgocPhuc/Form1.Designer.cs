@@ -1,4 +1,5 @@
-﻿namespace NguyenNgocPhuc
+﻿
+namespace NguyenNgocPhuc
 {
     partial class Form1
     {
@@ -134,7 +135,7 @@
             // 
             this.cbNCC.FormattingEnabled = true;
             this.cbNCC.Location = new System.Drawing.Point(445, 70);
-            this.cbNCC.Margin = new System.Windows.Forms.Padding(2);
+            this.cbNCC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbNCC.Name = "cbNCC";
             this.cbNCC.Size = new System.Drawing.Size(219, 21);
             this.cbNCC.TabIndex = 14;
@@ -143,7 +144,7 @@
             // 
             this.cbLoaiSP.FormattingEnabled = true;
             this.cbLoaiSP.Location = new System.Drawing.Point(445, 43);
-            this.cbLoaiSP.Margin = new System.Windows.Forms.Padding(2);
+            this.cbLoaiSP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbLoaiSP.Name = "cbLoaiSP";
             this.cbLoaiSP.Size = new System.Drawing.Size(219, 21);
             this.cbLoaiSP.TabIndex = 13;
@@ -278,6 +279,7 @@
             this.btThoat.TabIndex = 3;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // btSua
             // 
@@ -287,6 +289,7 @@
             this.btSua.TabIndex = 2;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
@@ -296,6 +299,7 @@
             this.btXoa.TabIndex = 1;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btThem
             // 
@@ -322,8 +326,10 @@
             this.gvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvSanPham.Location = new System.Drawing.Point(9, 19);
             this.gvSanPham.Name = "gvSanPham";
+            this.gvSanPham.RowHeadersWidth = 51;
             this.gvSanPham.Size = new System.Drawing.Size(642, 280);
             this.gvSanPham.TabIndex = 0;
+            this.gvSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvSanPham_CellClick);
             // 
             // Form1
             // 
